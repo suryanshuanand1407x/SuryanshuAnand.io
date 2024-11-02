@@ -1,0 +1,134 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #6C757D;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #ffffff;
+  padding: 15px 0;
+  position: fixed; /* Fixed positioning to keep navbar on top */
+  width: 75%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 1.2em;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Navigation Content */
+.nav-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo span {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #252422;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #252422;
+  font-size: 0.9em;
+  position: relative;
+}
+
+/* Strikethrough Hover Effect */
+.nav-links a:hover {
+  text-decoration: line-through; /* Strikethrough on hover */
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1); /* Expands line on hover */
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 100px auto 20px auto; /* Margin top for navbar */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Work Experience List */
+.work-experience ul {
+  list-style: none; /* Remove default list styling */
+  padding-left: 0; /* Remove padding for the list */
+}
+
+.work-experience ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Heading Colors */
+.heading {
+  color: #343A40; /* Change heading color */
+}
+
+/* Date Colors */
+.date {
+  color: #495057; /* Change date color */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-top: 140px;
+  }
+}
+
+/* Scrolled Navbar */
+.navbar.scrolled {
+  background-color: #ffffff; /* Change color on scroll */
+  box-shadow: none; /* Add shadow */
+}
+
+/* Hidden Navbar */
+.navbar.hidden {
+  transform: translateY(-100%); /* Move navbar out of view */
+  transition: transform 0.5s ease; /* Smooth transition */
+}

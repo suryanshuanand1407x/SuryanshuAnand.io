@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suryanshu_work</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --background-color: #ffffff;
+      --text-color: #6C757D;
+      --heading-color: #252422;
+      --link-color: #0077b6;
+      --nav-background: #ffffff;
+    }
+
+    [data-theme="dark"] {
+      --background-color: #1a1a1a;
+      --text-color: #b3b3b3;
+      --heading-color: #ffffff;
+      --link-color: #66b3ff;
+      --nav-background: #1a1a1a;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: 'IBM Plex Mono', monospace;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: var(--nav-background);
+      transition: transform 0.5s ease, background-color 0.3s ease;
+      width: 75%;
+      margin: 0 auto;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding: 15px 0;
+    }
+
+    .navbar.hidden {
+      transform: translateY(-100%);
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .logo span {
+      color: var(--heading-color);
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .nav-link {
+      color: var(--heading-color) !important;
+      transition: text-decoration 0.3s;
+    }
+
+    .nav-link:hover {
+      text-decoration: line-through !important;
+    }
+
+    .dark-mode-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .dark-mode-toggle img {
+      width: 24px;
+      height: 24px;
+      transition: opacity 0.3s ease;
+    }
+
+    .dark-mode-toggle .sun {
+      display: block;
+    }
+
+    .dark-mode-toggle .moon {
+      display: none;
+    }
+
+    [data-theme="dark"] .dark-mode-toggle .sun {
+      display: none;
+    }
+
+    [data-theme="dark"] .dark-mode-toggle .moon {
+      display: block;
+    }
+
+    h2 {
+      color: var(--heading-color);
+      margin-top: 2rem;
+    }
+
+    .work-experience ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .work-experience ul li {
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    hr {
+      border-color: var(--text-color);
+      opacity: 0.2;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        width: 100%;
+        border-radius: 0;
+      }
+      
+      .container {
+        padding-top: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <div class="logo d-flex align-items-center">
+        <img src="https://i.ibb.co/v3XsJx2/REMBG-Image-File.png" alt="Logo">
+        <span class="ms-2">sury_a</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://confused-experience-1ce.notion.site/1da56895d8074f7d82d6d288121618dc?v=3d730a1479ba44ee98d000bfe02b2ce8">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://docs.google.com/document/d/1EgPYvxFvJleZuo8pj-fwfq7p467b2vsF/edit?usp=sharing&ouid=101084877254009203914&rtpof=true&sd=true">CV</a></li>
+          <li class="nav-item">
+            <button id="darkModeToggle" class="dark-mode-toggle">
+              <img src="https://i.ibb.co/8rJ5fft/icons8-moon-50.png" alt="Light Mode" class="sun">
+              <img src="https://i.ibb.co/8PPHhnx/white.png" alt="Dark Mode" class="moon">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container py-5 mt-5">
+    <div class="work-experience">
+      <h2>Data Analyst, Finlatics</h2>
+      <p><strong>July 2024 - Sept 2024</strong></p>
+      <ul>
+        <li>Gained a comprehensive understanding of research methodologies, various types of data analytics, and their applications.</li>
+        <li>Solved case problems for technology-oriented businesses to improve profitability.</li>
+        <li>Analysed consumer behaviour and product preferences using Power BI to drive informed decisions and strategic planning.</li>
+      </ul>
+
+      <hr>
+
+      <h2>Executive Committee | TEDxTIET, TIET</h2>
+      <p><strong>PRESENT</strong></p>
+      <ul>
+        <li>Organised an official TEDx Event at Thapar University.</li>
+        <li>Engaged in discussions with companies for sponsorship, securing monetary support of INR 1,00,000.</li>
+        <li>Overall Event Coordinator for INNOVATEx Ideathon</li>
+      </ul>
+
+      <h2>Media Head | Saturnalia, TIET</h2>
+      <p><strong>Oct 2022 - July 2024</strong></p>
+      <ul>
+        <li>Worked in the marketing team for Saturnalia, the annual festival of Thapar University, attended by 20k+ people.</li>
+        <li>Coordinated media strategies and campaigns to enhance event visibility and engagement.</li>
+        <li>Collaborated with various teams to ensure consistent and effective communication across all media channels.</li>
+      </ul>
+
+      <h2>Core Team | Fine Arts and Photography Society, TIET</h2>
+      <p><strong>Oct 2022 - June 2024</strong></p>
+      <ul>
+        <li>Orchestrated Kaleidoscope, the flagship event of FAPS, drawing over 5,000 participants.</li>
+        <li>Curated drawing and photography sessions alongside engaging workshops to foster artistic expression and skill development.</li>
+      </ul>
+
+      <h2>Design Head | MUDRA, TIET</h2>
+      <p><strong>Oct 2022 - Sept 2023</strong></p>
+      <ul>
+        <li>Led media strategy and design initiatives for MUDRA and IZHAAR events, each attracting over 2,000 attendees.</li>
+        <li>Managed visual branding, promotional materials, and digital content creation to enhance event visibility and engagement.</li>
+      </ul>
+
+      <h2>Student Mentor | FROSH, TIET</h2>
+      <p><strong>April 2023 - July 2023</strong></p>
+      <ul>
+        <li>Guided and supported the Freshers Orientation at TIET, Patiala, during Open Day with over 5,000 attendees, consisting of both freshmen and parents.</li>
+        <li>Provided assistance and information to ensure a smooth transition and welcoming experience for new students and their families.</li>
+      </ul>
+
+      <h2>Executive Member | Microsoft Learn Student Chapter, TIET</h2>
+      <p><strong>Oct 2022 - Mar 2023</strong></p>
+      <ul>
+        <li>Coordinated multiple workshops and hackathons for MLSC, including HACK-TO-FEST, which attracted participation from over 100 teams.</li>
+        <li>Facilitated learning and innovation through hands-on sessions and collaborative competitions within the MLSC community.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Dark mode functionality
+    function setDarkMode(isDark) {
+      document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+      localStorage.setItem('darkMode', isDark ? 'dark' : 'light');
+    }
+
+    // Initialize dark mode based on saved preference
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('darkMode') || 'light';
+      setDarkMode(savedTheme === 'dark');
+      
+      document.getElementById('darkModeToggle').addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        setDarkMode(currentTheme === 'light');
+      });
+    });
+
+    // Navbar visibility
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        navbar.classList.add('hidden');
+      } else {
+        navbar.classList.remove('hidden');
+      }
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  </script>
+</body>
+</html>
